@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #473bf0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #473bf0;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div-buttons-header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Div-buttons-header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.Div-buttons-header a:hover {
+    color: #d0d0d0;
+}
+
+h1 {
+    color: black;
+    background-color: #acadbc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 100px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Ephesis', cursive;
+    background-color: #aeafc4;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20
+    px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.produtos-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.produto {
+    display: grid;
+    align-items: center;
+    max-width: 400px;
+    margin: 10px;
+    background-color: #acadbc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Sobre {
+    text-align: center;
+    color: black;
+}
+
+@font-face {
+    font-family: 'love';
+    src: url('/fontes/Olondon_.otf') format('opentype');
+}
+
+h1 {
+    font-family: 'love', Times, serif;
+    font-size: 3em;
+    text-align: center;
+}
+.produtos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent; /* Remove background color */
+    padding: 0; /* Remove padding */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: if you want rounded corners */
+}
+.promocao-fixa {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+}
+
+.promocao-fixa a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.promocao-fixa:hover {
+    background-color: #e64a19;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal - Loja de Roupas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('/fontes/Olondon_.otf') format(opentype);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="promocao-fixa">
+        <a href="/produtos/detalhes_camisetas.html">
+            <p>Promoção! Camiseta com desconto especial!</p>
+        </a>
+    </div>
+    
+    <header>
+        <div class="Div-buttons-header">
+            <a href="principal.html">
+                <img src="img/Netshoe.png" alt="home" height="80">
+            </a>
+            <a href="/forms/login.html">
+                <h3>Sair</h3>
+            </a>
+            <a href="carrinho.html">
+                <h3>Carrinho</h3>
+            </a>
+            <a href="#titulo2">
+                <h3>Sobre</h3>
+            </a>
+        </div>
+    </header>
+<br><br>
+    <h1 id="titulo1">Bem-vindo à Loja Heatshoes</h1>
+
+    <div class="produtos-container">
+        <div class="produto">
+            <h2>Camisetas</h2>
+            <a href="/produtos/detalhes_camisetas.html">
+                <img src="img/73271_camisa-nautico-oficial-jogo-i-2021-2022-masculina-op49538-pr-9182-op49538_m1_637594438201072267.webp" alt="Camisetas" width="400" height="400">
+            </a>
+            <form action="carrinho.html" method="get">
+                <input type="hidden" name="produto" value="Camisetas">
+                <input type="submit" value="Comprar">
+            </form>
+        </div>
+
+        <div class="produto">
+            <h2>Calças</h2>
+            <a href="/produtos/detalhes_calcas.html">
+                <img src="img/215786598882e25cbf7.webp" alt="Calças" width="400" height="400">
+            </a>
+            <form action="carrinho.html" method="get">
+                <input type="hidden" name="produto" value="Calças">
+                <input type="submit" value="Comprar">
+            </form>
+        </div>
+
+        <div class="produto">
+            <h2>Calçados</h2>
+            <a href="/produtos/detalhes_calcados.html">
+                <img src="img/tenis.webp" alt="Calçados" width="400" height="400">
+            </a>
+            <form action="carrinho.html" method="get">
+                <input type="hidden" name="produto" value="Calçados">
+                <input type="submit" value="Comprar">
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="Sobre"></h2>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <div class="sobre">
+        <h1 id="titulo2">Aluno: Paulo José Ferreira De Mendonça Neto</h1>
+        <h2>Sobre o projeto</h2>
+        <p>Decidi tentar criar uma cópia da loja Netshoes</p>
+        <p>Dificuldades:</p>
+        <ul>
+            <li>Nenhuma (por enquanto)</li>
+        </ul>
+        <a href="#titulo1">Bem-vindo à Loja Netshoes</a>
+    </div>
+    </center>
+</body>
+
+</html>

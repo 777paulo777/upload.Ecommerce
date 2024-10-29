@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <center>
+    <img src="/img/Netshoe.png" alt="home" width="100">
+    <h1>Cadastro</h1>
+    <form id="meuFormulario" onsubmit="return validar()">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome completo">
+            <br>
+
+            <label for="sexo">Sexo:</label>
+            <label for="mascu">Masculino</label>
+            <input type="radio" name="sexo" id="mascu">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="nInforma">Prefiro não informar</label>
+            <input type="radio" name="sexo" id="nInforma">
+            <br>
+
+            <label for="obs">Observações</label><br>
+            <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com">
+            <br>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+            <br>
+
+            <label for="confSenha">Confirmar senha</label>
+            <input type="password" name="confSenha" id="confSenha">
+            <br><br>
+
+            <div id="divResultado" style="color: red;"></div>
+
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Apagar</button>
+
+        </fieldset>
+    </form>
+    <a href="login.html">Voltar</a>
+
+    <script>
+        function validar() {
+            var divResultado = document.getElementById("divResultado");
+
+            // Nome
+            var nome = document.getElementById("nome");
+            if (nome.value.trim() === "") {
+                divResultado.innerText = "Informe o nome.";
+                nome.focus();
+                return false;
+            }
+
+            // Email
+            var email = document.getElementById("email");
+            if (email.value.trim() === "") {
+                divResultado.innerText = "Informe o email.";
+                email.focus();
+                return false;
+            }
+
+            // Senha
+            var senha = document.getElementById("senha");
+            if (senha.value.trim() === "") {
+                divResultado.innerText = "Informe a senha.";
+                senha.focus();
+                return false;
+            }
+
+            // Confirmar Senha
+            var confSenha = document.getElementById("confSenha");
+            if (confSenha.value.trim() === "") {
+                divResultado.innerText = "Confirme a senha.";
+                confSenha.focus();
+                return false;
+            }
+
+            // Verificar se as senhas são iguais
+            if (senha.value !== confSenha.value) {
+                divResultado.innerText = "As senhas não coincidem.";
+                confSenha.focus();
+                return false;
+            }
+
+            // Se todos os campos estão corretos
+            divResultado.innerText = "";
+            alert("Cadastro realizado com sucesso!");
+            return true;
+        }
+    </script>
+    </center>
+</body>
+
+</html>
